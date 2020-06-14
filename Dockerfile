@@ -11,8 +11,7 @@ RUN apk add --no-cache \
             py3-pip &&\
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &&\
     echo $TZ > /etc/timezone &&\
-    
-    pip3 install --upgrade pip==20.1.1 &&\
+    # pip3 install --upgrade pip==20.1.1 &&\
     rm -rf /root/.cache
 
 CMD ["/bin/sh"]
